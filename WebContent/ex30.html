@@ -4,29 +4,25 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <script type="text/javascript" src="./jquery/jquery-1.9.0.js"></script>
 <script type="text/javascript">
-	$( function() {
-		/* 코드를 완성하세요 */
-} );  
+	$(function() {
+		setTimeout(function() {
+			$(".d1").wrap("<h1>");
+			//$(".d2").wrap("<h2>");//한칸이 밀려야 하지만 안밀린다? ex34를 참고해서 아래과 같이 변경한다.
+			$(".d2").wrap("<h2>").css({
+				paddingLeft : "20px"//=20
+			});//padding 값을 준다.
+		}, 1000);
+	});
 </script>
 </head>
 <body>
-
-
-<em class="d1">1장</em>
-
-<em class="d2">1-1 절</em>
-
-<em class="d2">1-2 절</em>
-
-<em class="d2">1-2 절</em>
-
-<em class="d1">2장</em>
-
-<em class="d2">2-1 절</em>
-
-<em class="d2">2-2 절</em>
-
-<em class="d2">2-2 절</em>
-
+	<em class="d1">1장</em>
+	<em class="d2">1-1 절</em>
+	<em class="d2">1-2 절</em>
+	<em class="d2">1-2 절</em>
+	<em class="d1">2장</em>
+	<em class="d2">2-1 절</em>
+	<em class="d2">2-2 절</em>
+	<em class="d2">2-2 절</em>
 </body>
 </html>
